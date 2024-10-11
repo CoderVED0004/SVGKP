@@ -49,8 +49,14 @@ div a img {
     font-size: 2vw;
     word-spacing: 0.4vw;
     font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.banner img {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
 @media only screen and (max-width: 600px)
 {
     nav div {
@@ -76,4 +82,10 @@ div a img {
     .head {
         font-size: 4vw;
     }
+
+    .banner img {
+        width: 100vw;
+        margin: 0;
+    }
 }
+   
