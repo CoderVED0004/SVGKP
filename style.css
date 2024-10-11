@@ -47,6 +47,8 @@ div a img {
 {
     nav div {
         flex-direction: column;
+        margin-right: 8vw;
+        margin-left: 2vw;
     }
 
     nav {
@@ -54,10 +56,13 @@ div a img {
     }
 
     nav ul{
-        gap: 1vw;
+        gap: 0.5vw;
     }
     nav ul li button {
-        padding: 0.3vh 0.3vw;
+        line-height: 2.5vh;
+        margin: 1vh 0vw;
+        padding: 1vh 0.3vw;
         font-size: 14px;
+        text-wrap: wrap;
     }
 }
