@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    height: 7vh;
+    height: 9vh;
 }
 
 nav div {
@@ -17,10 +19,12 @@ nav div {
     /* justify-content: space-around; */
     gap: 1vw;
 }
+
 nav div span a {
     text-decoration: none;
     color: white;
 }
+
 nav ul {
     display: flex;
     gap: 2vw;
@@ -30,23 +34,24 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li button {
-    padding: 0.5vh 0.5vw;
-    border-radius: 10px;
-    border: 0;
-    background-color: rgb(0, 0, 0);
+nav ul li a {
     color: rgb(255, 255, 255);
     font-size: 17px;
+    text-decoration: none;
 }
+
 div a img {
     height: 4vh;
     margin-top: 0.4vh;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 
 .head {
     text-align: center;
-    margin-top: 50px;
-    font-size: 2vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2.3vw;
     word-spacing: 0.4vw;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -56,9 +61,139 @@ div a img {
     width: 70vw;
     margin-left: 15vw;
     margin-top: 5vh;
+    margin-bottom: 5vh;
+
 }
-@media only screen and (max-width: 600px)
-{
+
+.quote {
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 0.5vw;
+    font-size: 1.7vw;
+    margin-top: 8vh;
+    line-height: 7vh;
+    font-family: "Baloo 2", sans-serif;
+}
+
+.quote div:nth-child(2) {
+    margin-left: 38vw;
+    font-size: 1.1em;
+}
+
+.about1 {
+    margin-top: 10vh;
+    font-size: 3vw;
+    /* margin-left: 17vw; */
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 0.4vw;
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: rgb(194, 52, 52)
+}
+
+.about2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    gap: 7vw;
+
+}
+
+.about2 div img {
+    height: 60vh;
+    border-radius: 40px;
+}
+
+div.about2 .about {
+    width: 30vw;
+    font-size: 22px;
+    line-height: 7vh;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    text-align: right;
+}
+
+.aboutvideo {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 5vw;
+    align-items: center;
+}
+
+.aboutvideo div iframe {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+}
+
+.pt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 8vh;
+}
+
+.pt div img {
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.pt .ptvid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.pt .ptvid .mor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vh 2vh 3vh 2vh;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+}
+
+.pt .ptvid .mor div iframe {
+    border-radius: 20px;
+}
+
+.pt .ptvid .mor .morhead {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.pt .ptvid .eve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vh 2vh 3vh 2vh;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+}
+
+.pt .ptvid .eve div iframe {
+    border-radius: 20px;
+}
+
+.pt .ptvid .eve .evehead {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
     nav div {
         flex-direction: column;
         margin-right: 8vw;
@@ -69,9 +204,10 @@ div a img {
         height: 9vh;
     }
 
-    nav ul{
+    nav ul {
         gap: 0.5vw;
     }
+
     nav ul li button {
         line-height: 2.5vh;
         margin: 1vh 0vw;
@@ -79,13 +215,74 @@ div a img {
         font-size: 14px;
         text-wrap: wrap;
     }
+
     .head {
-        font-size: 4vw;
+        font-size: 2.5vh;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        word-spacing: 0.6vw;
     }
 
     .banner img {
         width: 100vw;
         margin: 0;
     }
+
+    .quote {
+        font-size: 3vw;
+        margin-top: 3vh;
+        font-size: 3vw;
+    }
+
+    .quote div:nth-child(2) {
+        margin-top: -2vh;
+    }
+
+
+    .about1 {
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+
+    .pt {
+        flex-direction: column;
+    }
+
+    .pt .ptvid {
+        gap: 4vh;
+    }
+
+    .pt div img {
+        height: 40vh;
+    }
 }
-   
+
+@media only screen and (max-width: 1100px) {
+    .about2 {
+        flex-direction: column;
+        margin-top: 6vh;
+    }
+
+    .about2 div img {
+        height: 50vw;
+        border-radius: 40px;
+    }
+
+    div.about2 .about {
+        width: 32vh;
+        text-align: justify;
+        line-height: 4vh;
+        font-size: 20px;
+    }
+
+    .aboutvideo {
+        flex-direction: column;
+        margin-top: 6vh;
+        gap: 5vh;
+    }
+
+    .aboutvideo div iframe {
+        width: 65vw;
+    }
+
+}
