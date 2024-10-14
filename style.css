@@ -223,7 +223,7 @@ div.about2 .about {
 }
 
 .event div img{
-    width: 15vw;
+    width: 14vw;
     border-radius: 5px ;
 }
 
@@ -237,7 +237,7 @@ div.about2 .about {
 
 .event .aboutevent div{
     line-height: 5vh;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 0.2vw;
