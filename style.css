@@ -17,14 +17,14 @@ nav .logo1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2vw;
+    
 }
 
 nav .logo1 span a {
     text-decoration: none;
     color: white;
     font-family: "Baloo Bhai 2", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav .logo1 {
@@ -214,7 +214,7 @@ div.about2 .about {
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    border: 15px solid blue;
+    border: 10px solid blue;
     margin-left: 25vw;
     margin-right: 25vw;
     gap: 5vw;
@@ -223,7 +223,7 @@ div.about2 .about {
 }
 
 .event div img{
-    width: 25vw;
+    width: 15vw;
     border-radius: 5px ;
 }
 
@@ -275,7 +275,7 @@ div.about2 .about {
 }
 
 .contact .map {
-    border: 20px solid rgb(86, 86, 245);
+    border: 10px solid rgb(86, 86, 245);
     padding: 3px;
     border-radius: 10px;
 }
