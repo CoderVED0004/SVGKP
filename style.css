@@ -369,9 +369,13 @@ footer .follow .followlogo ul li a svg{
     }
 
     .quote {
-        font-size: 3vw;
+        
         margin-top: 3vh;
         font-size: 3vw;
+    }
+
+    .quote div {
+        font-size: 1.6vh;
     }
 
     .quote div:nth-child(2) {
