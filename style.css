@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -17,14 +18,14 @@ nav .logo1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    gap: 0.2vw;
 }
 
 nav .logo1 span a {
     text-decoration: none;
     color: white;
     font-family: "Baloo Bhai 2", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav .logo1 {
@@ -77,8 +78,8 @@ div a img {
     margin-left: 15vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-
 }
+
 
 .quote {
     text-align: center;
@@ -214,7 +215,7 @@ div.about2 .about {
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    border: 10px solid blue;
+    border: 15px solid blue;
     margin-left: 25vw;
     margin-right: 25vw;
     gap: 5vw;
@@ -223,7 +224,7 @@ div.about2 .about {
 }
 
 .event div img{
-    width: 14vw;
+    width: 25vw;
     border-radius: 5px ;
 }
 
@@ -237,7 +238,7 @@ div.about2 .about {
 
 .event .aboutevent div{
     line-height: 5vh;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 0.2vw;
@@ -275,7 +276,7 @@ div.about2 .about {
 }
 
 .contact .map {
-    border: 10px solid rgb(86, 86, 245);
+    border: 20px solid rgb(86, 86, 245);
     padding: 3px;
     border-radius: 10px;
 }
@@ -369,13 +370,9 @@ footer .follow .followlogo ul li a svg{
     }
 
     .quote {
-        
+        font-size: 3vw;
         margin-top: 3vh;
         font-size: 3vw;
-    }
-
-    .quote div {
-        font-size: 1.6vh;
     }
 
     .quote div:nth-child(2) {
