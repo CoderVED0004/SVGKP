@@ -338,7 +338,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
-    background-color: aquamarine; 
+    background-color: rgba(56, 250, 185, 0.593); 
         border-radius: 8px;
     padding: 2vw 1vw 2vw 1vw;
 }
