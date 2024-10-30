@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -72,8 +74,9 @@ div a img {
 }
 
 div h2{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -403,20 +406,24 @@ footer .logo {
     gap: 2vw;
 }
 
-footer .logo a img{
-    width: 3vw;
+footer .logo a img {
     border: 3px solid black;
     border-radius: 30px;
 }
 
-footer .follow{
+footer .logo a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .follow {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.1vh;
 }
 
-footer .follow .followhead{
+footer .follow .followhead {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -430,8 +437,10 @@ footer .follow .followlogo ul {
     gap: 4vw;
 }
 
-footer .follow .followlogo ul li a svg{
-    width: 3vw;
+footer .follow .followlogo ul li a i {
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -444,23 +453,39 @@ footer .follow .followlogo ul li a svg{
 
     nav {
         height: 11vh;
+        gap: 16vw;
     }
 
     nav .menu{
-        flex-direction: column;
-        gap: 2vh;
+        
+        gap: 4vh;
     }
 
-    nav .menu .ul1 {
+    nav div ul {
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5vh;
+    }
+
+    /* nav div .ul1{
+        margin-right: 3vw;
+    }
+
+    nav div .ul2{
+        margin-left: 3vw;
+    } */
+
+    /* nav .menu .ul1 {
         gap: 24vw;
     }
 
     nav .menu .ul2{
         gap: 11vw;
-    }
+    } */
 
     nav div ul li a {
         font-size: 17px;
+        word-wrap: break-word;
     }
 
     .head {
@@ -492,6 +517,7 @@ footer .follow .followlogo ul li a svg{
     }
     .pt{
         flex-direction: column;
+        gap: 2.5vh;
     }
     .time{
         flex-direction: row;
@@ -516,7 +542,7 @@ footer .follow .followlogo ul li a svg{
     .february{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 25px ;
     }
     .february div .febmor{
@@ -529,7 +555,7 @@ footer .follow .followlogo ul li a svg{
     .march{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 37px ;
     }
     .march div .marmor{
@@ -538,7 +564,7 @@ footer .follow .followlogo ul li a svg{
     .april{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 38px ;
     }
     .april div .aprmor{
@@ -547,7 +573,7 @@ footer .follow .followlogo ul li a svg{
     .may{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 38px ;
     }
     .may div .maymor{
@@ -556,7 +582,7 @@ footer .follow .followlogo ul li a svg{
     .june{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 38px ;
     }
     .june div .junemor{
@@ -565,7 +591,7 @@ footer .follow .followlogo ul li a svg{
     .july{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 38px ;
     }
     .july div .julymor{
@@ -574,7 +600,7 @@ footer .follow .followlogo ul li a svg{
     .august{
         flex-direction: row;
         gap: 11vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 29px ;
     }
     .august div .augeve{
@@ -583,7 +609,7 @@ footer .follow .followlogo ul li a svg{
     .september{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 11px ;
     }
     .september div .septeve{
@@ -595,7 +621,7 @@ footer .follow .followlogo ul li a svg{
         padding: 2vw 5vw 2vw 5vw;
         background-color: aquamarine; 
         border-radius: 8px;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 33px ;
     }
     .october div .octoeve{
@@ -604,7 +630,7 @@ footer .follow .followlogo ul li a svg{
     .november{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 13px ;
     }
     .november div .noveve{
@@ -613,7 +639,7 @@ footer .follow .followlogo ul li a svg{
     .december{
         flex-direction: row;
         gap: 10vw;
-        border: 1px solid black;
+        border: 0.5px solid black;
         padding: 10px 13px ;
     }
     .december div .deceve{
@@ -645,5 +671,6 @@ footer .follow .followlogo ul li a svg{
 
     footer .logo a img{
         width: 5vh;
+        height: 5vh;
     }
 }
