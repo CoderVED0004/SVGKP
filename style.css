@@ -225,7 +225,7 @@ div.about2 .about {
 
 .event div img {
     width: 19vw;
-    height: 52vh;
+    height: 55vh;
     border-radius: 5px;
 }
 
@@ -384,7 +384,7 @@ footer .follow .followlogo ul li a i {
     }
 
     .head {
-        font-size: 2.5vh;
+        font-size: 1.3rem;
         margin-bottom: 40px;
         margin-top: 30px;
         word-spacing: 0.6vw;
