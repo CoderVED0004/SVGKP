@@ -343,6 +343,7 @@ footer .follow .followlogo ul li a i {
         flex-direction: column;
         /* margin-right: 8vw; */
         margin-left: 2vw;
+        margin-top: 0.5vh;
     }
 
     nav {
@@ -351,7 +352,7 @@ footer .follow .followlogo ul li a i {
     }
 
     nav .menu{
-        
+        margin-top: 0.5vh;
         gap: 4vh;
     }
 
@@ -378,8 +379,8 @@ footer .follow .followlogo ul li a i {
     } */
 
     nav div ul li a {
-        font-size: 17px;
-        word-wrap: break-word;
+        font-size: 14px;
+        /* word-wrap: break-word; */
     }
 
     .head {
