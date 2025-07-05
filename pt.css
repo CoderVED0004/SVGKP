@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
 * {
     margin: 0;
@@ -12,13 +12,18 @@ nav {
     align-items: center;
     background-color: rgb(0, 0, 0);
     height: 9vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.395);
 }
 
 nav .logo1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2vw;
+    gap: 2vw;
 }
 
 nav .logo1 span a {
@@ -28,19 +33,14 @@ nav .logo1 span a {
     font-size: 20px;
 }
 
-nav .logo1 {
-    display: flex;
-    gap: 2vw;
-}
-
 nav .menu{
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 nav div ul{
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
     justify-content: center;
     align-items: center;
 }
@@ -67,16 +67,29 @@ div a img {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 2.3vw;
+    font-size: 2.3rem;
     word-spacing: 0.4vw;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 7rem;
 }
 
 div h2{
-    font-size: 2.1rem;
+    margin-top: 8vh;
+    font-size: 3.5rem;
+    /* margin-left: 17vw; */
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 0.4vw;
+    font-weight: bold;
+    /* text-decoration-line: underline; */
+    color: #865217;
+    /* background-color: black; */
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.395); */
 }
 
 
@@ -107,16 +120,26 @@ div h2{
     gap: 2vh;
 }
 
-.current1 div svg{
-    color: #f4ac05;
+.current1 div img{
+    width: 5.2rem;
 }
 
 .current1 :nth-child(2){
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    color: #e4b784;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .current1 :nth-child(3){
     font-size: 2rem;
+    color: white;
+    letter-spacing: 0.1vw;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .current2 {
@@ -127,16 +150,26 @@ div h2{
     gap: 2vh;
 }
 
-.current2 div svg {
-    color: #ff792b;
+.current2 div img {
+    width: 5.2rem;
 }
 
 .current2 :nth-child(2){
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    color: #e4b784;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .current2 :nth-child(3){
     font-size: 2rem;
+    color: white;
+    letter-spacing: 0.1vw;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .currentwhole{
@@ -145,12 +178,13 @@ div h2{
     align-items: center;
     gap: 6vw;
     margin-top: 7vh;
-    background-color: #6488EA;
+    background-color: #000000;
     padding: 1.5vw;
     /* margin-left: 35vw;
     margin-right: 35vw; */
     width: 370px;
     border-radius: 8px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .currentwhole1{
@@ -173,11 +207,12 @@ div h2{
     align-items: center;
     gap:3vw;
     margin-top: 10vh;
-    background-color: #6488EA;
-    width: 95vw;
+    background-color: #000000;
+    width: 93vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
     border-radius: 8px;
+    box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .time{
@@ -197,8 +232,9 @@ div h2{
 }
 
 .time1 .text{
-    font-size: 1.1em;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
+    color: white;
 }
 
 .time2 {
@@ -210,8 +246,9 @@ div h2{
 }
 
 .time2 .text{
-    font-size: 1.1em;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
+    color: white;
 }
 
 .january{
@@ -221,6 +258,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .january div span{
@@ -234,6 +272,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .february div span{
@@ -247,6 +286,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .march div span{
@@ -260,6 +300,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .april div span{
@@ -273,6 +314,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .may div span{
@@ -286,6 +328,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .june div span{
@@ -299,6 +342,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .july div span{
@@ -312,6 +356,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .august div span{
@@ -325,6 +370,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .september div span{
@@ -338,9 +384,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
-    background-color: rgba(56, 250, 185, 0.593); 
-        border-radius: 8px;
-    padding: 2vw 1vw 2vw 1vw;
+    color: white;
 }
 
 .october div span{
@@ -354,6 +398,10 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    background-color: #1f1f1f; 
+        border-radius: 8px;
+        color: #e4b784;
+    padding: 2vw 1vw 2vw 1vw;
 }
 
 .november div span{
@@ -367,6 +415,7 @@ div h2{
     align-items: center;
     flex-direction: column;
     gap: 8vh;
+    color: white;
 }
 
 .december div span{
@@ -382,10 +431,9 @@ div h2{
 }
 
 .aboutvideo div iframe {
-    border-radius: 10px;
     padding: 20px;
-    background-color: rgb(226, 226, 226);
-    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
 }
 
 footer {
@@ -396,7 +444,7 @@ footer {
     margin-top: 20vh;
     border-top: 1px solid black;
     padding-top: 10vh;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(0, 0, 0);
 }
 
 footer .logo {
@@ -407,13 +455,14 @@ footer .logo {
 }
 
 footer .logo a img {
-    border: 3px solid black;
+    border: 3px solid #e4b784;
     border-radius: 30px;
 }
 
 footer .logo a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    color: #e4b784;
 }
 
 footer .follow {
@@ -424,8 +473,9 @@ footer .follow {
 }
 
 footer .follow .followhead {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    color: #e4b784;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -441,15 +491,16 @@ footer .follow .followlogo ul li a i {
     margin-top: 3vh;
     margin-bottom: 7vh;
     font-size: 40px;
+    color: white;
 }
 
-@media only screen and (max-width: 1400px) {
-
+@media only screen and (max-width: 600px){
     nav .logo1 {
         flex-direction: column;
         /* margin-right: 8vw; */
         margin-left: 2vw;
         margin-top: 0.5vh;
+        gap: 0.1vh;
     }
 
     nav {
@@ -489,176 +540,6 @@ footer .follow .followlogo ul li a i {
         /* word-wrap: break-word; */
     }
 
-    .head h2{
-        font-size: 1.2rem;
-    }
-    .head {
-        font-size: 1.3rem;
-        margin-bottom: 40px;
-        margin-top: 30px;
-        word-spacing: 0.6vw;
-    }
-
-    .h1{
-        margin-top: 10vh;
-    }
-    .currentwhole {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6vw;
-        margin-top: 7vh;
-        background-color: #6488EA;
-        padding: 4.5vw;
-        width: 260px;
-        border-radius: 8px;
-    }
-    .h1{
-        font-size: 1.3rem;
-    }
-    .h2{
-        font-size: 1rem;
-    }
-    .pt{
-        flex-direction: column;
-        gap: 2.5vh;
-    }
-    .time{
-        flex-direction: row;
-        gap: 5vw;
-        margin-left: 25vw;
-    }
-    .time1{
-        margin-top: 1vh;
-    }
-    /* .time2{
-        flex-direction: row;
-    } */
-    .january{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 35px ;
-    }
-    .january div span{
-        text-align: center;
-    }
-    .february{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 25px ;
-    }
-    .february div .febmor{
-        text-align: center;
-    }
-    .february div .febeve{
-        margin-right: 2.5vw;
-        text-align: center;
-    }
-    .march{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 37px ;
-    }
-    .march div .marmor{
-        margin-left: 1.7vw;
-    }
-    .april{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 38px ;
-    }
-    .april div .aprmor{
-        margin-left: 3.5vw;
-    }
-    .may{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 38px ;
-    }
-    .may div .maymor{
-        margin-left: 4.5vw;
-    }
-    .june{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 38px ;
-    }
-    .june div .junemor{
-        margin-left: 4.5vw;
-    }
-    .july{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 38px ;
-    }
-    .july div .julymor{
-        margin-left: 5.5vw;
-    }
-    .august{
-        flex-direction: row;
-        gap: 11vw;
-        border: 0.5px solid black;
-        padding: 10px 29px ;
-    }
-    .august div .augeve{
-        margin-right: 2vw;
-    }
-    .september{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 11px ;
-    }
-    .september div .septeve{
-        margin-right: 6.5vw;
-    }
-    .october{
-        flex-direction: row;
-        gap: 10vw;
-        padding: 2vw 5vw 2vw 5vw;
-        background-color: aquamarine; 
-        border-radius: 8px;
-        border: 0.5px solid black;
-        padding: 10px 33px ;
-    }
-    .october div .octoeve{
-        margin-right: 1vw;
-    }
-    .november{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 13px ;
-    }
-    .november div .noveve{
-        margin-right: 5vw;
-    }
-    .december{
-        flex-direction: row;
-        gap: 10vw;
-        border: 0.5px solid black;
-        padding: 10px 13px ;
-    }
-    .december div .deceve{
-        margin-right: 5vw;
-    }
-    .aboutvideo {
-        flex-direction: column;
-        margin-top: 6vh;
-        gap: 5vh;
-    }
-
-    .aboutvideo div iframe {
-        width: 60vw;
-    }
-
     footer {
         flex-direction: column;
         margin-top: 10vh;
@@ -677,4 +558,222 @@ footer .follow .followlogo ul li a i {
         width: 5vh;
         height: 5vh;
     }
+}
+
+@media only screen and (max-width: 1400px) {
+
+
+
+    .head h2{
+        font-size: 1.2rem;
+    }
+    .head {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        word-spacing: 0.6vw;
+        margin-top: 120px;
+    }
+
+    div h2{
+        margin-top: 20px;
+        font-size: 3vh;
+    }
+    .h1{
+        margin-top: 10vh;
+    }
+    .currentwhole {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+        margin-top: 7vh;
+        background-color: #000000;
+        padding: 4.5vw;
+        width: 270px;
+        border-radius: 8px;
+    }
+    .h1{
+        font-size: 1.3rem;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+    .pt{
+        flex-direction: column;
+        gap: 2.5vh;
+        width: 350px;
+    }
+    .time{
+        flex-direction: row;
+        margin-left: 110px;
+    }
+    .time1{
+        margin-top: 1vh;
+    }
+    /* .time2{
+        flex-direction: row;
+    } */
+    .january{
+        flex-direction: row;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .january div span{
+        text-align: center;
+    }
+    .february{
+        flex-direction: row;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .february div .febmor{
+        text-align: center;
+    }
+    .february div .febeve{
+        margin-right: 10px;
+        text-align: center;
+    }
+    .february div .febabt{
+        /* margin-left: ; */
+    }
+    .march{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .march div .marmor{
+        margin-left: 10px;
+    }
+    .april{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .april div .aprmor{
+        margin-left: 20px;
+    }
+    .may{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .may div .maymor{
+        margin-left: 25px;
+    }
+    .june{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .june div .junemor{
+        margin-left: 25px;
+    }
+    .july{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .july div .julymor{
+        margin-left: 30px;
+    }
+    .august{
+        flex-direction: row;
+        gap: 11vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .august div .augmor{
+        margin-left: 8px;
+    }
+    .september{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .september div .septeve{
+        margin-right: 20px;
+    }
+    .october{
+        flex-direction: row;
+        gap: 10vw;
+        padding: 2vw 5vw 2vw 5vw;
+        border: 0.5px solid #e4b784;
+        border-radius: 8px;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+    }
+    .october div .octoeve{
+        /* margin-right: ; */
+    }
+    .november{
+        flex-direction: row;
+        gap: 10vw;
+        padding: 2vw 5vw 2vw 5vw;
+        background-color: #1f1f1f;
+        border: 0.5px solid black;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+    }
+    .november div .noveve{
+        margin-right: 20px;
+    }
+    .december{
+        flex-direction: row;
+        gap: 10vw;
+        border: 0.5px solid #e4b784;
+        padding: 10px 35px ;
+        gap: 40px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    .december div .deceve{
+        margin-right: 18px;
+    }
+    .aboutvideo {
+        flex-direction: column;
+        margin-top: 6vh;
+        gap: 5vh;
+    }
+
+    .aboutvideo div iframe {
+        width: 60vw;
+    }
+
+    
 }

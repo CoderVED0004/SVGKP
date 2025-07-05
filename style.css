@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
 }
+
 
 
 nav {
@@ -12,13 +14,18 @@ nav {
     align-items: center;
     background-color: rgb(0, 0, 0);
     height: 9vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.395);
 }
 
 nav .logo1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2vw;
+    gap: 2vw;
 }
 
 nav .logo1 span a {
@@ -28,19 +35,14 @@ nav .logo1 span a {
     font-size: 20px;
 }
 
-nav .logo1 {
-    display: flex;
-    gap: 2vw;
-}
-
 nav .menu{
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 nav div ul{
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
     justify-content: center;
     align-items: center;
 }
@@ -67,10 +69,11 @@ div a img {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 2.3vw;
+    font-size: 2.3rem;
     word-spacing: 0.4vw;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 7rem;
 }
 
 .banner img {
@@ -85,7 +88,7 @@ div a img {
     text-align: center;
     font-weight: bold;
     word-spacing: 0.5vw;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-top: 8vh;
     line-height: 7vh;
     font-family: "Baloo 2", sans-serif;
@@ -93,20 +96,27 @@ div a img {
 
 .quote div:nth-child(2) {
     margin-left: 38vw;
-    font-size: 1.1em;
+    font-size: 0.9em;
+    word-spacing: 0.2em;
 }
 
 .about1 {
-    margin-top: 25vh;
-    font-size: 3vw;
+    margin-top: 15vh;
+    font-size: 3.5rem;
     /* margin-left: 17vw; */
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 0.4vw;
     font-weight: bold;
-    text-decoration-line: underline;
-    color: rgb(7, 50, 1);
-    text-transform: uppercase;
+    /* text-decoration-line: underline; */
+    color: #865217;
+    /* background-color: black; */
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-transform: uppercase; */
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.395); */
 }
 
 .about2 {
@@ -114,13 +124,16 @@ div a img {
     justify-content: center;
     align-items: center;
     margin-top: 8vh;
-    gap: 7vw;
+    gap: 8vw;
 
 }
 
 .about2 div img {
     height: 60vh;
+    width: 25vw;
     border-radius: 40px;
+    box-shadow: 0 0 50px rgb(121, 208, 235),
+    0 0 100px rgb(121, 208, 235);
 }
 
 div.about2 .about {
@@ -136,15 +149,38 @@ div.about2 .about {
     display: flex;
     justify-content: center;
     gap: 10vw;
-    margin-top: 5vw;
+    margin-top:18vh;
     align-items: center;
+}
+
+.aboutvideo .abtvid1 {
+    width: 28vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30vh;
+}
+
+.aboutvideo .abtvid2 {
+    width: 28vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30vh;
 }
 
 .aboutvideo div iframe {
     border-radius: 10px;
-    padding: 20px;
-    background-color: rgb(226, 226, 226);
+    /* padding: 20px; */
+    background-color: rgb(0, 0, 0);
+    border: 4px solid #e4b784;
     border-radius: 5px;
+    width: 25vw;
+    height: 25vh;
 }
 
 .pt {
@@ -162,10 +198,10 @@ div.about2 .about {
 
 .pt .ptvid {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 8vw;
 }
 
 .pt .ptvid .mor {
@@ -175,18 +211,22 @@ div.about2 .about {
     align-items: center;
     gap: 1vw;
     padding: 2vh 2vh 3vh 2vh;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    width: 22vw;
 }
 
 .pt .ptvid .mor div iframe {
     border-radius: 5px;
+    width: 20vw;
+    border: 4px solid #e4b784;
 }
 
 .pt .ptvid .mor .morhead {
-    font-size: 17px;
+    font-size: 21px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    color: #e4b784;
 }
 
 .pt .ptvid .eve {
@@ -196,29 +236,33 @@ div.about2 .about {
     align-items: center;
     gap: 1vw;
     padding: 2vh 2vh 3vh 2vh;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    width: 22vw;
 }
 
 .pt .ptvid .eve div iframe {
     border-radius: 5px;
+    width: 20vw;
+    border: 4px solid #e4b784;
 }
 
 .pt .ptvid .eve .evehead {
-    font-size: 17px;
+    font-size: 21px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    color: #e4b784;
 }
 
-.event {
+/* .event {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    border: 15px solid blue;
+    margin-top: 5vh;
+    border: 15px solid rgb(0, 0, 0);
     margin-left: 25vw;
     margin-right: 25vw;
-    gap: 5vw;
+    gap: 3vw;
     padding: 1vw;
     border-radius: 5px;
 }
@@ -227,10 +271,11 @@ div.about2 .about {
     width: 19vw;
     height: 55vh;
     border-radius: 5px;
+    border: 10px solid #e4b784;
 }
 
 .event .aboutevent {
-    width: 15vw;
+    width: 19vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,47 +284,280 @@ div.about2 .about {
 
 .event .aboutevent div {
     line-height: 5vh;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1vw;
+}
+
+.eventdate{
+    background-color: #e4b784;
+    padding: 4px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+} */
+
+.eventwhole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.event1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0px 0px 30px 0px;
+    background-color: #e4b784;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event1 div img{
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.event1info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+    width: 270px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 18px;
+}
+
+.event1add{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 0.3rem;
+    text-indent: 0.3rem;
+    border: 1px solid black;
+    padding: 5px 0px 5px 0px;
+    border-radius: 30px;
+}
+
+.event1info div a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .contact1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
 }
 
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    gap: 5vw;
+    gap: 8vw;
+    width: 70%;
 }
 
 .contact .info {
-    width: 25vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 4vh;
 }
 
-.contact .info .number {
+.contact .info .number1 {
+    display: flex;
+    gap: 1vw;
+}
+
+.contact .info .number{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
     font-size: 25px;
-    font-weight: bold;
+}
+
+.contact .info .number1 i{
+    color: green;
+    font-size: 35px;
+}
+
+.contact .info .number div a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .info .number a:hover{
+    text-decoration: underline;
 }
 
 .contact .info .email {
     font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.contact .info .email div a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .info .email a:hover{
+    text-decoration: underline;
+}
+
+.contact .info .email i{
+    margin-top: 0.5vh;
+    color: red;
+    font-size: 35px;
 }
 
 .contact .info .address {
-    text-align: center;
+    text-align: start;
     line-height: 5vh;
     font-size: 25px;
+    display: flex;
+    gap: 1vw;
 }
 
-.contact .map {
-    border: 20px solid rgb(86, 86, 245);
+.contact .info .address div a:hover{
+    text-decoration: underline;
+}
+
+.contact .info .address i{
+    margin-top: 0.5vh;
+    color: blue;
+}
+
+.address div a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0000ee;
+}
+
+.contact .map div{
+    background-color: #e4b784;
     padding: 3px;
+    border: 10px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.contactwhole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4b784bf;
+    margin-top: 40px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.address div i{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #0d7282;
+}
+
+.addhead{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.add :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.phoneno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.phoneno div a{
+    text-decoration: none;
+    color: black;
+}
+
+.mail a{
+    text-decoration: none;
+    color: black;
+}
+
+.add{
+    font-size: 18px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 500;
+}
+
+.phoneno{
+    font-size: 20px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 500;
+}
+
+.mail{
+    font-size: 18px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 500;
+}
+
+.map{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.273);
+    border-radius: 10px;
+}
+
+.map iframe{
     border-radius: 10px;
 }
 
@@ -288,10 +566,10 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10vw;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     border-top: 1px solid black;
     padding-top: 10vh;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(0, 0, 0);
 }
 
 footer .logo {
@@ -302,13 +580,14 @@ footer .logo {
 }
 
 footer .logo a img {
-    border: 3px solid black;
+    border: 3px solid #e4b784;
     border-radius: 30px;
 }
 
 footer .logo a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    color: #e4b784;
 }
 
 footer .follow {
@@ -319,8 +598,9 @@ footer .follow {
 }
 
 footer .follow .followhead {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    color: #e4b784;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -336,6 +616,7 @@ footer .follow .followlogo ul li a i {
     margin-top: 3vh;
     margin-bottom: 7vh;
     font-size: 40px;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -344,6 +625,7 @@ footer .follow .followlogo ul li a i {
         /* margin-right: 8vw; */
         margin-left: 2vw;
         margin-top: 0.5vh;
+        gap: 0.1vh;
     }
 
     nav {
@@ -388,6 +670,7 @@ footer .follow .followlogo ul li a i {
         margin-bottom: 40px;
         margin-top: 30px;
         word-spacing: 0.6vw;
+        margin-top: 120px;
     }
 
     .banner img {
@@ -395,13 +678,15 @@ footer .follow .followlogo ul li a i {
         margin: 0;
     }
 
-    .quote {
-        font-size: 1rem;
+    .quote1 {
+        font-size: 0.75rem;
         margin-top: 3vh;
     }
 
     .quote div:nth-child(2) {
         margin-top: -2vh;
+        margin-left: 15vw;
+        font-size: 0.8rem;
     }
 
 
@@ -416,8 +701,8 @@ footer .follow .followlogo ul li a i {
     }
 
     .pt .ptvid {
-        gap: 2vh;
-        flex-direction: row;
+        gap: 3vh;
+        flex-direction: column;
     }
 
     .pt div img {
@@ -425,112 +710,37 @@ footer .follow .followlogo ul li a i {
     }
 
     .pt .ptvid .mor {
-        width: 27vw;
+        width: 60vw;
+        height: 20vh;
     }
 
     .pt .ptvid .mor .morhead {
         text-align: center;
+
     }
 
-    .pt .ptvid .mor iframe {
-        width: 27vw;
+    .pt .ptvid .mor div iframe {
+        width: 55vw;
+        height: 15vh;
     }
 
     .pt .ptvid .eve {
-        width: 27vw;
+        width: 60vw;
+        height: 20vh;
     }
 
     .pt .ptvid .eve .evehead {
         text-align: center;
     }
 
-    .pt .ptvid .eve iframe {
-        width: 27vw;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .about2 {
-        flex-direction: column;
-        margin-top: 6vh;
-    }
-
-    .about2 div img {
-        height: 50vw;
-        border-radius: 40px;
-    }
-
-    div.about2 .about {
-        width: 35vh;
-        text-align: justify;
-        line-height: 4vh;
-        font-size: 16px;
-    }
-
-    .aboutvideo {
-        flex-direction: column;
-        margin-top: 6vh;
-        gap: 5vh;
-    }
-
-    .aboutvideo div iframe {
-        width: 60vw;
-    }
-
-    .event {
-        flex-direction: column;
-        padding: 2vh;
-        margin-left: 15vw;
-        margin-right: 15vw;
-        margin-top: 2.5vh;
-    }
-
-    .event .aboutevent {
-        width: 50vw;
-    }
-
-    .event div img {
-        width: 50vw;
-        height: 33vh;
-    }
-
-    .contact {
-        flex-direction: column;
-        margin-top: 2vh;
-    }
-
-    .contact .map {
-        width: 60vw;
-    }
-
-    .contact .map iframe {
-        width: 60vw;
-        height: 20vh;
-    }
-
-    .contact .info .number {
-        font-size: 13px;
-    }
-
-    .contact .info {
-        gap: 1.8vh;
-    }
-
-    .contact .info .email {
-        font-size: 20px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .contact .info .address {
-        width: 60vw;
-        line-height: 3.5vh;
-        font-size: 23px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    .pt .ptvid .eve div iframe {
+        width: 55vw;
+        height: 15vh;
     }
 
     footer {
         flex-direction: column;
-        margin-top: 10vh;
+        /* margin-top: 10vh; */
     }
 
     footer .follow .followlogo ul {
@@ -541,4 +751,177 @@ footer .follow .followlogo ul li a i {
     footer .follow .followlogo ul li a svg {
         width: 7vw;
     }
+}
+
+@media only screen and (max-width: 1100px) {
+    .about2 {
+        flex-direction: column;
+        margin-top: 6vh;
+    }
+
+    .about2 div img {
+        height: 280px;
+        width: 250px;
+        border-radius: 40px;
+        margin-top: 5vh;
+    }
+
+    div.about2 .about {
+        width: 35vh;
+        text-align: justify;
+        line-height: 4vh;
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+
+    .aboutvideo {
+        flex-direction: column;
+        margin-top: 6vh;
+        gap: 5vh;
+    }
+
+    .aboutvideo .abtvid1{
+        width: 50vw;
+        height: 15vh;
+        padding: 20px;
+    }
+
+    .aboutvideo div iframe {
+        width: 50vw;
+        height: 15vh;
+    }
+
+    .aboutvideo .abtvid2{
+        width: 50vw;
+        height: 15vh;
+        padding: 20px;
+    }
+
+    /* .event {
+        flex-direction: column;
+        padding: 2vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 2.5vh;
+    }
+
+    .event .aboutevent {
+        width: 100%;
+    }
+
+    .event div img {
+        width: 250px;
+        height: 330px;
+    } */
+
+    .event{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* .contact1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    
+    .contact .map div {
+        width: 60vw;
+    }
+
+    .contact .map iframe {
+        width: 60vw;
+        height: 20vh;
+    }
+
+
+    .contact .info .number1 {
+        font-size: 17px;
+        gap: 3vw;
+    }
+
+    .number1 i{
+        font-size: 25px;
+    }
+
+    .number div a{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+    }
+
+    .contact .info {
+        gap: 1.8vh;
+        width: 85%;
+        
+    }
+
+    .contact .info .email{
+        gap: 3vw;
+    }
+
+    .contact .info .email div a{
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .contact .info .email div i{
+        margin-bottom: 0.35vh;
+    }
+
+    .contact .info .address {
+        width: 85%;
+        gap: 3vw;
+    }
+
+    .address div i{
+        font-size: 25px;
+    }
+
+    .contact .info .address div a{
+        font-size: 17px;
+        line-height: 1vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    } */
+
+    .contactinfo{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .address div i{
+        margin-bottom: 5px;
+    }
+
+    .addhead{
+        font-weight: 700;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .add{
+        font-size: 20px;
+        font-family: "Baloo Bhai 2", sans-serif;
+    }
+
+    .phoneno{
+        font-size: 20px;
+        font-family: "Baloo Bhai 2", sans-serif;
+    }
+
+    .mail{
+        font-size: 20px;
+        font-family: "Baloo Bhai 2", sans-serif;
+    }
+
+    .map iframe{
+        width: 250px;
+    }
+   
 }
